@@ -1,6 +1,6 @@
-load("@io_bazel_rules_go//go:def.bzl", "go_test", "go_tool_library")
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test", "go_tool_library")
 
-go_tool_library(
+go_library(
     name = "lint",
     srcs = ["import_unsafe.go"],
     importpath = "github.com/jschaf/bazel-bug-go-tool/lint",
